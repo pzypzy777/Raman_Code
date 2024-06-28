@@ -820,7 +820,7 @@ void send_PL_to_PC(void)
 				}
 				ad_data = (c_test[1] << 8) + c_test[0];
 				ad_data = ad_data * 51000 / 65535 * 2;//改三线式  后
-
+				//printf("%d\n", ad_data);
 				//P I D
 
 				error_data = (CCD_kT - ad_data);
